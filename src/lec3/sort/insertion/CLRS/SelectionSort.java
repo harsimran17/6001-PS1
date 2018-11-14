@@ -6,7 +6,7 @@ public class SelectionSort {
 	public List<Integer> selectionSort(List<Integer> input){
 		int size = input.size();
 		for (int i = 0; i < size; i++) {
-			int indexOfSmallestElement = findSmallest(input.subList(i,size));
+			int indexOfSmallestElement = findSmallest(input.subList(i,size))+i;
 			int temp=input.get(i);
 			input.set(i, input.get(indexOfSmallestElement));
 			input.set(indexOfSmallestElement, temp);
