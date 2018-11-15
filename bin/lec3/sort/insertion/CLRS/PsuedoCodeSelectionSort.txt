@@ -1,4 +1,0 @@
-SELECTION-SORT(A):
-	for i=0 to A.length:
-		smallest=FINDSMALLEST(A[i..A.length])
-		SWAP smallest with A[i]
